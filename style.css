@@ -1,5 +1,5 @@
 body {
-background-image: url(../img5343.jpg);
+background-image: url("../img5343.jpg");
     color: rgb(35, 4, 52);
     font-size: 20px;
 
@@ -34,7 +34,7 @@ section h3 {
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: 600;
-  background-image: url(../img5341.jpg);
+  background-image: url("../img5341.jpg");
   background-repeat: center ;
   background-position: center ;
   padding: 20px 10px 10px 48px;
