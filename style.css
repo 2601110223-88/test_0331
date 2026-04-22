@@ -28,8 +28,10 @@ h1 {
 }
 
 h2 {
-    padding: 0px 10px 50px 20px;
+    padding: 20px 10px 10px 20px;
     text-align: center;
+    font-size: 100px;
+
 }
 
 main {
@@ -69,10 +71,10 @@ text-align: left;
 }
 
 section h3 {
-    border-bottom: 2px solid hsl(288, 85%, 13%);
+    border-bottom: 7px solid hsl(317, 100%, 17%);
   margin-bottom: 20px;
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 70px;
+  font-weight: bold;
   color: #000000;
   background-image: url(imgh3.png);
   background-repeat: no-repeat;
