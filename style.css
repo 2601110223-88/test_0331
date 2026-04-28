@@ -1,0 +1,153 @@
+body {
+background-image: url(img1.jpg);
+    font-size: 30px;
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%;
+
+}
+article {
+    text-align: center; 
+}
+header {
+    margin: 0 auto 33px;
+    width: 90%;
+    text-align: center;
+}
+
+time {
+  background-color: #ffa7df7c;
+  border-radius: 0px 22px 22px 22px;
+  font-size: 23px;
+  font-weight: bold;
+  color: #000000;
+  padding: 11px 23px 10px 18px;
+  display: inline-block;
+  text-align: left;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0 16px;
+}
+
+h2 {
+    padding: 20px 10px 10px 20px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+main {
+    
+    background-color: #fbdff49d;
+    border-radius: 160px;
+    padding: 62px 100px 32px 100px;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    text-align: left;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    border-top: center;
+    border-bottom: 2px solid #ffffff;
+    background-color: rgba(255, 132, 208, 0.448);
+    padding: 12px 0px 10px;
+}
+
+header nav ul li  {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+ letter-spacing: 37px;
+}
+
+p   {
+text-align: left;
+}
+
+section h3 {
+    border-bottom: 7px solid hsl(317, 100%, 17%);
+  margin-bottom: 20px;
+  font-size: 38px;
+  font-weight: bold;
+  color: #000000;
+  background-image: url(imgh3.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 20px 10px 10px 100px;
+}
+
+ul {
+    text-align: center;
+}
+li {
+    text-align: center;
+}
+
+div {
+    width: 1240px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+ nav {
+  border-radius: 110px;
+  background-color: #eae1f3b7;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.16);
+  padding: 10px 10px;
+  margin-bottom: 24px;
+}
+
+aside {
+    position: fixed;
+    right: 70%;
+    top: 200px;
+    width: 300px;
+}
+aside nav h2 {
+  margin-bottom: 18px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #7c5d48;
+}
+aside nav ul {
+    color: black;
+}
+
+.categoryNav ul li {
+  list-style-type: square;
+  color: #7c5d48;
+  margin: 0 0 13px 30px;
+}
+.categoryNav ul li a {
+  color: #ff00ae;
+  font-size: 18px;
+  margin: 0px;
+}
+.recentNav ul {
+  height: 200px;
+  overflow: hidden scroll;
+   
+}
+.recentNav ul li {
+  border-bottom: 1px solid #7c5d48;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.recentNav ul li a {
+    color: #ff00ae;
+    font-size: 18px;
+}
+footer p {
+    padding: 62px 100px 32px 100px;
+    text-align: center;
+}
