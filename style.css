@@ -1,6 +1,7 @@
 body {
 background-image: url(img1.jpg);
     font-size: 30px;
+<<<<<<< HEAD
     transform: scale(0.8);
     transform-origin: top left;
     width: 125%;
@@ -12,6 +13,15 @@ article {
 header {
     margin: 0 auto 33px;
     width: 90%;
+=======
+}
+article {
+    text-align: center;
+}
+header {
+    margin: 0 auto 33px;
+    width: 1500px;
+>>>>>>> ac70ffbfa8ad26d3d6c02122ecfae79f115bcf63
     text-align: center;
 }
 
@@ -47,6 +57,10 @@ main {
     text-align: left;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ac70ffbfa8ad26d3d6c02122ecfae79f115bcf63
 header nav ul {
     display: flex;
     justify-content: center;
@@ -56,10 +70,18 @@ header nav ul {
     padding: 12px 0px 10px;
 }
 
+<<<<<<< HEAD
 header nav ul li  {
     margin: 0 20px;
 }
 
+=======
+
+
+header nav ul li  {
+    margin: 0 20px;
+}
+>>>>>>> ac70ffbfa8ad26d3d6c02122ecfae79f115bcf63
 header nav ul li a {
   font-size: 40px;
   font-weight: bold;
@@ -67,6 +89,10 @@ header nav ul li a {
  letter-spacing: 37px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ac70ffbfa8ad26d3d6c02122ecfae79f115bcf63
 p   {
 text-align: left;
 }
@@ -88,7 +114,11 @@ ul {
 }
 li {
     text-align: center;
+<<<<<<< HEAD
 }
+=======
+},
+>>>>>>> ac70ffbfa8ad26d3d6c02122ecfae79f115bcf63
 
 div {
     width: 1240px;
@@ -97,7 +127,10 @@ div {
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ac70ffbfa8ad26d3d6c02122ecfae79f115bcf63
  nav {
   border-radius: 110px;
   background-color: #eae1f3b7;
