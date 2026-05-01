@@ -1,78 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DAEL</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <section>
-        <div class="layout"> 
-
-       
-    <header class="navbar">
-        <h1>DAEL</h1>
-        <nav class= "top-row">
-        <ul class="menu">
-            <li><a href="">NEW</a></li>
-            <li><a href="">BEST THINGS</a></li>
-            <li><a href="">SHOP ALL</a></li>
-            <li><a href="">COLLECTION</a></li>
-        </ul>
-        </nav>
-        </div>
+        <header class="navbar">
+            <h1>DAEL</h1>
+            <nav class="top-row">
+                <ul class="menu">
+                    <li><a href="">NEW</a></li>
+                    <li><a href="">BEST THINGS</a></li>
+                    <li><a href="">SHOP ALL</a></li>
+                    <li><a href="">COLLECTION</a></li>
+                </ul>
+            </nav>
         </header>
+
         <main class="imge">
-    <div class="slider-container">
-        <button class="prev-btn"> &#10094; </button>
-
-        <div class="image-wrapper">
-            <img src="imgh1.jpg" alt="">
-            <img src="imgh15.jpg" alt="">
-            <img src="imgh3.jpg" alt="">
-            <img src="imgh4.jpg" alt="">
-            <img src="imgh5.jpg" alt="">
-            <img src="imgh6.jpg" alt="">
-            <img src="imgh7.jpg" alt="">
-        </div>
-
-        <button class="next-btn"> &#10095; </button>
-    </div>
-    <script>
-    const wrapper = document.querySelector('.image-wrapper');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    const totalImages = document.querySelectorAll('.image-wrapper img').length;
-    let index = 0;
-
-    nextBtn.addEventListener('click', () => {
-        if (index < totalImages - 1) {
-            index++;
-        } else {
-            index = 0; 
-        }
-        updateSlider();
-    });
-
-    prevBtn.addEventListener('click', () => {
-        if (index > 0) {
-            index--;
-        } else {
-            index = totalImages - 1; 
-        }
-        updateSlider();
-    });
-
-    function updateSlider() {
-        wrapper.style.transform = `translateX(${-index * 100}%)`;
-    }
-</script>
-</main>
-
-         
-    
+            <div class="slider-container">
+                <button class="prev-btn"> &#10094; </button>
+                <div class="image-wrapper">
+                    <img src="imgh1.jpg" alt="">
+                    <img src="imgh15.jpg" alt="">
+                    <img src="imgh3.jpg" alt="">
+                    <img src="imgh4.jpg" alt="">
+                    <img src="imgh5.jpg" alt="">
+                    <img src="imgh6.jpg" alt="">
+                    <img src="imgh7.jpg" alt="">
+                </div>
+                <button class="next-btn"> &#10095; </button>
+            </div>
+        </main>
     </section>
+
+    <script>
+        const wrapper = document.querySelector('.image-wrapper');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const images = document.querySelectorAll('.image-wrapper img');
+        const totalImages = images.length;
+        let index = 0;
+
+        nextBtn.addEventListener('click', () => {
+            index = (index < totalImages - 1) ? index + 1 : 0;
+            updateSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            index = (index > 0) ? index - 1 : totalImages - 1;
+            updateSlider();
+        });
+
+        function updateSlider() {
+            wrapper.style.transform = `translateX(${-index * 100}%)`;
+        }
+    </script>
 </body>
 </html>
