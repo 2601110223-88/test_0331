@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAEL - Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header class="navbar">
+            <h1>DAEL</h1>
+            <nav class="top-row">
+                <ul class="menu">
+                    <li><a href="">NEW</a></li>
+                    <li><a href="">BEST THINGS</a></li>
+                    <li><a href="">SHOP ALL</a></li>
+                    <li><a href="">COLLECTION</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="imge">
+            <div class="slider-container">
+                <button class="prev-btn"> &#10094; </button>
+                
+                <div class="image-wrapper">
+                    <img src="img1.jpg" alt="이미지0">
+                    <img src="imgh15.jpg" alt="이미지1">
+                    <img src="imgh3.jpg" alt="이미지2">
+                    <img src="img4.jpg" alt="이미지3">
+                    <img src="imgh4.jpg" alt="이미지4">
+                    <img src="imgh5.jpg" alt="이미지5">
+                    <img src="imgh6.jpg" alt="이미지6">
+                    <img src="imgh1.jpg" alt="이미지7">
+                    <img src="img16.jpg" alt="이미지8">
+                    <img src="img17.jpg" alt="이미지9">
+                    <img src="img18.jpg" alt="이미지10">
+                    <img src="img19.jpg" alt="이미지11">
+                    <img src="img2.jpg" alt="이미지12">
+                    <img src="img3.jpg" alt="이미지13">
+                </div>
+
+                <button class="next-btn"> &#10095; </button>
+            </div>
+        </main>
+        <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <p class="copyright">Copyright &copy; DAEL &trade;</p>
+            <ul class="footer-links">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 보호 정책</a></li>
+                <li><a href="#">연락하기</a></li>
+            </ul>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-info">
+            <div class="info-row">
+                <span>OWNER: 강다현</span>
+                <span>OFFICE: 02-123-1234</span>
+            </div>
+            <div class="info-row">
+                <span>ADDRESS: 서울특별시 강남구 (청담동) </span>
+            </div>
+        </div>
+    </div>
+</footer>
+    </section>
+
+    <script>
+      const wrapper = document.querySelector('.image-wrapper');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const images = document.querySelectorAll('.image-wrapper img');
+const totalImages = images.length;
+
+let index = 0;
+let autoSlide;
+
+function updateSlider() {
+   
+    images.forEach(img => img.classList.remove('active'));
+    images[index].classList.add('active');
+
+    
+    const moveX = index * (80 + 2); 
+    wrapper.style.transform = `translateX(-${moveX}%)`;
+}
+
+
+function nextSlide() {
+    index = (index < totalImages - 1) ? index + 1 : 0;
+    updateSlider();
+}
+
+function prevSlide() {
+    index = (index > 0) ? index - 1 : totalImages - 1;
+    updateSlider();
+}
+
+
+function startAutoSlide() { autoSlide = setInterval(nextSlide, 3000); }
+function stopAutoSlide() { clearInterval(autoSlide); startAutoSlide(); }
+
+nextBtn.addEventListener('click', () => { nextSlide(); stopAutoSlide(); });
+prevBtn.addEventListener('click', () => { prevSlide(); stopAutoSlide(); });
+
+
+updateSlider(); 
+startAutoSlide();
+    </script>
+</body>
+</html>
